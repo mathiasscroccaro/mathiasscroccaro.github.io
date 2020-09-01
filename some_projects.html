@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Hielo by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">Mathias Scroccaro Costa</a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="biography.html">Short résumé</a></li>
+					<li><a href="some_projects.html">Projects</a></li>
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<h2>Some projects that I was involved</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Main -->
+			<div id="main" class="container">
+
+				<!-- Elements -->
+					<div class="row 200%">
+						<div class="6u 12u$(medium)">
+							<h2 id="7">My first experience as a teacher</h2>
+							<div class="box">
+								<p>Just before all the chaos that the COVID-19 pandemic brought to the world, in <strong>January 2020</strong> I had the opportunity and the privilege to lead a summer course of <strong>basic electronics lab II class</strong>. The experience was complete: I had to elaborate the activity scripts, teach the theoretical classes and monitor the students' practical development. The circuit in question that the students had to develop was an <strong>ECG signal generator</strong>, as well as a circuit for its processing. The complete circuit is shown in the figure below.</p>
+							</div>
+							<span class="image fit"><img src="images/circuito_completo.png" alt="" /></span>
+							<div class="box">
+								<p>The students had to weld components of the warehouse in a punctured phenolite plate, composing the following circuits with operational amplifiers:</p>
+							</div>
+							<div class="box">
+								<ul>
+									<li>DAC 8 bits;</li>
+									<li>Inverter adder;</li>
+									<li>Instrumentation amplifier;</li>
+									<li>Sallen-key filter;</li>
+								</ul>
+							</div>
+							<div class="box">
+								<p>The figure below shows one of the working circuits and the result seen on the oscilloscope</p>
+							</div>
+							<span class="image fit"><img src="images/cbeb_setup_completo.png" alt="" /></span>
+
+							<h2 id="6">Water meter IoT device</h2>
+							<div class="box">
+								<p>The circuit that I will show below is one of the products of my <strong>master's dissertation</strong>. In it I am using a microcontroller NRF51822 for the <strong>sensing of a hydrometer</strong> and communication of telemetry data via <strong>Bluetooth Low-Energy (BLE)</strong>.</p>
+							</div>
+							<div class="box">
+								<p>The circuit had to sample voltage signals acquired through an <strong>optical sensor</strong>, using a <strong>low-power comparator</strong>. The telemetry data was saved in an EEPROM memory, via the <strong>I2C</strong> interface, and also sent via <strong>BLE</strong>.</p>
+							</div>
+							<div class="box">
+								<p>The biggest challenge of the project was to develop this entire circuit using the harvest of <strong>solar energy</strong> as an energy source. An energy management circuit had to be developed, which was able to capture energy and store it in a <strong>supercapacitor</strong>, as well as <strong>firmware programming routines</strong> and practices were adapted to <strong>lower energy consumption</strong>.</p>
+							</div>
+							<div class="box">
+								<p>The figures below show the front and bottom circuit layers of the <strong>IoT device</strong> that was built.</p>
+							</div>
+							<span class="image fit"><img src="images/front.jpg" alt="" /></span>
+							<span class="image fit"><img src="images/bottom.jpg" alt="" /></span>
+
+							<h2 id="5">Low-power datalogger</h2>
+							<div class="box">
+								<p>It was necessary to develop a <strong>low consumption</strong> datalogger circuit to perform some measurements on my IoT telemetry device in an external environment, developed during the master's degree.</p>
+							</div>
+							<div class="box">
+								<p>The same microcontroller as the telemetry device, NRF51822, was used to sample voltage levels and store them in flash memory using the <strong>SPI</strong> interface. For this purpose, an <strong>analog conditioning circuit</strong> was developed, with operational amplifiers, to limit the bandwidth of the sampled voltage signal.</p>
+							</div>
+							<div class="box">
+								<p>The figures below show the top and bottom sides of the developed circuit.</p>
+							</div>
+							<span class="image fit"><img src="images/front_datalogger.jpg" alt="" /></span>
+							<span class="image fit"><img src="images/bottom_datalogger.jpg" alt="" /></span>
+
+							<h2 id="4">Winner of the 2ª CubeDesign! Cubsat project</h2>
+							<div class="box">
+								<p>I had the opportunity to visit one of the most renowned research centers in Brazil, which is the <strong>National Institute for Space Research (INPE)</strong>. In the photo below, I am inside the main laboratory inside the institute, in front of the <strong>largest vacuum chamber in Latin America!</strong></p>
+							</div>
+								<span class="image fit"><img src="images/inpe.png" alt="" /></span>
+							<div class="box">
+								<p>I only came to visit the laboratory because I participated in an extracurricular team at Unicamp in space-modeling. The team signed up for the <strong>Cubesats</strong> (mini satellites) development competition at INPE. In this project, I was responsible for the development of <strong>Cubesat's orientation algorithm</strong>, using solar panels. We used <strong>STM32F103</strong> microcontrollers to process the data on the device, which I had to develop part of the logic and firmware. The figure below shows the ready Cubsat.</p>
+							</div>
+								<span class="image fit"><img src="images/Cubesat.JPG" alt="" /></span>
+							<div class="box">
+								<p>The Cubesat developed was subjected to a series of tests, including sensor telemetry, control of a reaction wheel and antenna ejection. The team that best demonstrated results was ours. As a result of this competition, <strong>we received first place!</strong> In the Figure below a photo is shown at the moment of the award.</p>
+							</div>
+								<span class="image fit"><img src="images/Equipe.JPG" alt="" /></span>
+
+
+						</div>
+						<!-- Segunda coluna -->
+						<div class="6u$ 12u$(medium)">
+							<h2 id="3">RF power splitter simulation on HFSS</h2>
+							<div class="box">
+								<p>During a semester of post-graduation, I attended the discipline of "guidance and radiation of waves". In this period I was able to better understand the phenomena of <strong>RF signals</strong>. I got in touch with computational tools for high frequency simulation, like <strong>CST</strong> and <strong>HFSS</strong>, and designed some devices, like <strong>passive filters, waveguides and a Wilkinson power splitter</strong>. The figure below shows a power divider that was simulated using the HFSS.</p>
+							</div>
+							<span class="image fit"><img src="images/hfss.jpg" alt="" /></span>
+
+							<h2 id="2">3 channel ECG circuit and computer interface</h2>
+							<div class="box">
+								<p>My final undergraduate work in electronic engineering was the development of an <strong>electrocardiograph</strong> circuit capable of capturing <strong>3 ECG leads.</strong> </p>
+							</div>
+							<div class="box">
+								<p>In this work, I designed the entire analog and digital circuit for <strong>conditioning and digitizing the signals</strong>. I also had to develop the firmware for the <strong>Atmega328</strong> microcontroller, which communicated via the <strong>UART</strong> interface with a computer. In turn, the graphical interface, that I programmed in <strong>C++</strong> using the <strong>Qt library</strong>, received the data and showed it on the computer monitor.</p>
+							</div>
+							<div class="box">
+								<p>The figures below show the manually prototyped circuit and the graphical interface showing the signals.</p>
+							</div>
+							<span class="image fit"><img src="images/ECG_3channel.jpg" alt="" /></span>
+							<span class="image fit"><img src="images/interface.png" alt="" /></span>
+
+							<h2 id="1">DAC and ADC controlling plataform</h2>
+							<div class="box">
+								<p>During the end of my graduation I did a scientific initiation. As a product of my work, I designed an electronic device to send and receive analog and digital signals. The circuit consisted of an Atmega328 microcontroller and an IC DAC, whose communication was established via the <strong>SPI</strong> interface. The circuit was designed using <strong>EDA Kicad</strong> software and manufactured industrially. The figure below shows the final result.</p>
+							</div>
+							<span class="image fit"><img src="images/sistema_medida.png" alt="" /></span>
+							<div class="box">
+								<p>For the control of the device, I developed an HMI in <strong>LabVIEW</strong> language, whose function was to send and receive commands via the <strong>UART</strong> interface. The figure below shows the control interface.</p>
+							</div>
+							<span class="image fit"><img src="images/labview.png" alt="" /></span>
+						</div>
+					</div>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
