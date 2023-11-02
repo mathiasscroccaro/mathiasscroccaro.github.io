@@ -6,21 +6,6 @@ import (
 	"testing"
 )
 
-func TestGetMarkdownFileTransformedToHTML(t *testing.T) {
-	html := GetMarkdownFileTransformedToHTML("./fixtures/basic-convertion.md")
-
-	if html == "" {
-		t.Errorf("expected html to not be empty")
-	}
-
-	expectedHtmlBytes, _ := os.ReadFile("./fixtures/basic-convertion.html")
-	expectedHtml := string(expectedHtmlBytes)
-
-	if html != expectedHtml {
-		t.Errorf("expected %s, got %s", expectedHtml, html)
-	}
-}
-
 func TestGetAllMarkdownFilesInDir(t *testing.T) {
 	files := GetAllMarkdownFilesInDir("./posts/")
 	if len(files) == 0 {

@@ -143,7 +143,7 @@ func (bt PortfolioTemplate) RenderProjectsPage() []byte {
 	lastPostNumber := strconv.Itoa(len(files))
 
 	tmpl.Execute(&buffer, lastPostNumber)
-	
+
 	return buffer.Bytes()
 }
 
@@ -281,6 +281,7 @@ func copyFile(originPath, destinationPath string) {
 func copyStaticFiles(outputDirectory string) {
 	// copyFile("./assets/favicon.ico", filepath.Join(outputDirectory, "favicon.ico"))
 	copyFile("./assets/styles.css", filepath.Join(outputDirectory, "styles.css"))
+	copyFile("./assets/me.jpg", filepath.Join(outputDirectory, "me.jpg"))
 }
 
 func BuildStaticPortfolio(outputDirectory string) {
