@@ -8,7 +8,7 @@
     --margin-medium: 25px;
     --margin-big: 50px;
 
-    --margin-article: var(--margin-big);
+    --margin-article: 70px;
 }
 
 body {
