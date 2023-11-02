@@ -81,7 +81,7 @@ func (p Post) CreateHTMLFile() {
 	html = append(html, []byte("</article>")...)
 
 	if p.PostNumber() != 1 {
-		html = append(html, []byte(fmt.Sprintf("\n" + `<span hx-trigger="revealed" hx-get="./posts/%d.html" hx-swap="afterend"></span>`, p.PostNumber() - 1))...)
+		html = append(html, []byte(fmt.Sprintf("\n" + `<span hx-trigger="revealed" hx-get="/posts/%d.html" hx-swap="afterend"></span>`, p.PostNumber() - 1))...)
 	}
 	html = FindImagesInRepositoryAndReplaceToBase64IntoHTML(html)
 	
