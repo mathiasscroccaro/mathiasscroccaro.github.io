@@ -1,17 +1,20 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 )
 
 func main() {
-	BuildStaticPortfolio("./output")
+	outputDir := "./docs"
 
-	fs := http.FileServer(http.Dir("./output"))
+	BuildStaticPortfolio(outputDir)
+
+	fs := http.FileServer(http.Dir(outputDir))
 	http.Handle("/", fs)
 
-	log.Print("Listening on :3000...")
+	fmt.Print("Listening on http://localhost:3000")
 	err := http.ListenAndServe(":3000", nil)
 	if err != nil {
 		log.Fatal(err)
