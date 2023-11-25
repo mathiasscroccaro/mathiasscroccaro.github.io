@@ -5,7 +5,7 @@ build:
 	go build *.go
 
 server: build
-	./main
+	./main -s
 
 format:
 	go fmt
